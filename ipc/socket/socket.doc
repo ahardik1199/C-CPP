@@ -1,0 +1,7 @@
+A client socket is created with socket[] call, and connected to remote address with connect[] call
+and can retrieve data with recv[] call ( socket[] ---> connect[] --->recv[] )
+
+on the Server end of the socket, create a socket with a socket[] call, but then, we need to bind[] that
+socket to an IP and port where it can then listen[] for connections, and then finally accept[] a connection
+and then send[] or recv[] data to other socket it is connected to.
+( socket[] --> bind[] --> listen[] --> accept[] )
